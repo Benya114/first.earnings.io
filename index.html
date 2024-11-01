@@ -1,0 +1,240 @@
+<html>
+    
+      <div class="carousel">
+        <div class="carousel-slide">
+<head>
+     
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Фірма та заробіток - поради та ресурси для успіху">
+    <title>Фірма та заробіток</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Фірма та заробіток</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Про компанію</a></li>
+            <li><a href="#tips">Поради для заробітку</a></li>
+            <li><a href="#carousel">Як працюють дропшипери</a></li>
+            <li><a href="#sigma">Поради для новачків </a></li>
+            
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>Про компанію</h2>
+        <p>Наша фірма допомагає підприємцям і фрілансерам ефективно організовувати свою роботу та досягати фінансового успіху.</p>
+    </section>
+
+    <section id="tips">
+        <h2>Поради для заробітку</h2>
+        <ul>
+            <li>Вивчайте ринок і аналізуйте потреби клієнтів.</li>
+            <li>Впроваджуйте нові технології та автоматизуйте процеси.</li>
+            <li>Інвестуйте в свій професійний розвиток і команду.</li>
+            <li>Фокусуйтеся на довгострокових стратегіях, а не на швидкому прибутку.</li>
+        </ul>
+    </section>
+
+    <section id="carousel">
+        <h1>Як працюють дропшипери</h1>
+       <img src="https://images.prom.ua/4486575180_w1280_h1280_rus_drop.jpg?fresh=1">
+       
+    </section>
+   
+    
+
+    <script>
+        $(document).ready(function(){
+            let currentSlide = 0;
+            const slides = $('.carousel-slide');
+            const totalSlides = slides.length;
+
+            function showSlide(index) {
+                slides.hide();
+                slides.eq(index).show();
+            }
+
+            $('.next').click(function() {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                showSlide(currentSlide);
+            });
+
+            $('.prev').click(function() {
+                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                showSlide(currentSlide);
+            });
+
+            showSlide(currentSlide); 
+        });
+    </script>
+    <section id="sigma">
+     <h2>Поради для новачків</h2>
+        <ul>
+            <li> Почніть з основ. Вивчайте базові концепції програмування, такі як змінні, цикли, умови та функції. Це фундамент, на якому будується весь код.</li>
+            <h3>o</h3>
+            <li>Виберіть одну мову програмування. Спочатку зосередьтеся на одній мові (наприклад, Python, JavaScript або C++), щоб не перевантажувати себе інформацією.
+</li>        <h3>o</h3>
+            <li>Читайте чужий код. Аналіз коду інших програмістів допоможе вам зрозуміти різні підходи до вирішення проблем і навчитися кращим практикам.</li>
+            <h3>o</h3>
+            <li>Будьте терплячими і наполегливими. Програмування може бути складним на початку, але з часом усе стане зрозумілішим. Головне — не здаватися й продовжувати навчання.</li>
+             
+
+
+
+
+            
+
+
+            <h3>o</h3>
+         
+        
+           
+        
+        </ul>
+    </section>
+</body>
+        </div>
+      </div>
+
+      
+       <div class="carousel-slide">
+      
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Як заробити онлайн</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Як заробити онлайн</h1>
+            <nav class="nav">
+                <a href="#pora">Поради</a>
+                <a href="#zarob">Заробіток онлайн</a>
+                
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                
+                <h2>Відкрийте для себе світ онлайн-заробітку</h2>
+                <p>Ми надаємо корисні поради та ресурси для початку вашого шляху до фінансової незалежності.</p>
+            </section>
+            <h1 id="pora">Поради</h1>
+            <section class="content">
+                  
+                <div class="card">
+                    <h3>Фріланс</h3>
+                    <p>Робота на замовлення, яка дозволяє використовувати ваші навички в різних галузях.</p>
+                </div>
+                <div class="card">
+                    <h3>Криптовалюти</h3>
+                    <p>Інвестування та торгівля криптовалютами для тих, хто готовий до ризику.</p>
+                </div>
+                <div class="card">
+                    <h3>Онлайн-курси</h3>
+                    <p>Створення і продаж курсів на різних платформах для пасивного доходу.</p>
+                </div>
+            </section>
+        </main>
+        <section>
+        <div id="zarob">
+            <h1>Заробіток онлайн</h1>
+
+           <li> Фріланс: Виконання завдань на замовлення (написання статей, веб-дизайн, програмування, переклади тощо) через платформи на кшталт Upwork, Freelancer, або українські сервіси, такі як Freelancehunt.</li>
+
+            <h3>o</h3>
+
+            <li>Ведення блогу або YouTube-каналу: Створення контенту з монетизацією через рекламу, партнерські програми чи спонсорські угоди.
+
+</li>        <h3>o</h3>
+
+            <li>Продаж товарів або послуг: Інтернет-магазини, дропшипінг чи продаж хендмейду на платформах типу Etsy або OLX.
+
+</li>
+            <h3>o</h3>
+
+            <li>Інвестиції та трейдинг: Вкладення у криптовалюти, акції або біржову торгівлю. Цей спосіб вимагає певних знань і готовності до ризику.</li>
+        </div>
+        </section>
+    </div>
+</body>
+
+
+
+       
+
+       
+       </div>
+       
+        <section id="carousel">
+       
+        <div class="carousel">
+           
+        </div>
+        <button class="carousel-btn prev">Назад</button>
+        <button class="carousel-btn next">Вперед</button>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="carousel-slide">
+        <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="popakaka">
+        <h1>Заробіток онлайн в Україні</h1>
+        <p>Дізнайтеся про кращі способи заробітку в інтернеті для початківців і професіоналів.</p>
+    </header>
+
+    <section class="main-content">
+        <article class="info">
+            <h2>Популярні способи заробітку</h2>
+            <p>Сьогодні в інтернеті можна знайти багато можливостей для заробітку, таких як фріланс, ведення блогу, створення відеоконтенту та інше. Знайдіть найкращий спосіб для себе!</p>
+        </article>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Фріланс</h3>
+                <p>Фріланс — один із найпопулярніших способів заробітку. Ви можете пропонувати свої послуги у сфері дизайну, програмування, копірайтингу тощо.</p>
+            </div>
+            <div class="card">
+                <h3>Ведення блогу</h3>
+                <p>Заробіток на веденні блогу або відеоблогу на YouTube може приносити стабільний дохід завдяки рекламі та спонсорству.</p>
+            </div>
+            <div class="card">
+                <h3>Інвестування</h3>
+                <p>Інвестування в акції, криптовалюту або стартапи може бути прибутковим, але вимагає певних знань і обережності.</p>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+        
+      
+      
+</html>
